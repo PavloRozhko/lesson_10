@@ -1,0 +1,76 @@
+/* 
+to connect fonts at the end of the code add: &display=swap 
+font ushould be connected after reset.css and before styles
+*/
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+/* ===========================General classes================================== */
+body {
+	font-family: "Lato";
+	color: #424551;
+	line-height: 160%;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+[class *="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+/* ===============================Article===================================== */
+.article__content{
+	margin-bottom: 30px;
+}
+.article__title,
+.article__image,
+.article__text-content{
+	max-width: 810px;
+}
+.article__title{
+	margin-bottom: 40px;
+}
+.article__image {
+	margin-bottom: 60px;
+}
+.article__image img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+.article__main-text {
+	margin-bottom: 24px;
+}
+.article__main-text *,
+.article__text blockquote{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+}
+.article__text-content blockquote{
+	padding: 48px 0 48px 58px;
+	background: url(../img/icons/braces.svg) 0 50px / auto no-repeat;
+}
+.article__main-text *:not(:last-child) {
+	margin-bottom: 20px;
+}
+.article__text ul:not(:last-child),
+.article__text p:not(:last-child) {
+	margin-bottom: 24px;
+}
+.article__text-content ul li {
+	background: url(../img/icons/check.svg) 0 5px/ auto no-repeat;
+	padding-left: 32px;
+}
+.article__text-content ul li:not(:last-child) {
+	margin-bottom: 4px;
+}
+.article__main-text *:not(:last-child){
+	margin-bottom: 24px;
+}
